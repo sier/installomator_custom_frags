@@ -9,4 +9,4 @@ expectedTeamID="VH7G2MRF27"
 appName="Navicat for MySQL.app"
 
 # Dynamic version check scraping Navicat's release notes
-appNewVersion=$(curl -fsL "https://www.navicat.com/en/products/navicat-for-mysql-release-note#M" | grep "Navicat for MySQL" | grep "(macOS)" | grep "version" | grep -oE "[0-9]{2,}\.[0-9]+\.[0-9]+" | sort -V | tail -1)
+appNewVersion=$(curl -fsL "https://www.navicat.com/en/products/navicat-for-mysql-release-note#M" | grep "Navicat for MySQL" | grep "(macOS)" | grep "version" | grep -oE "17\.[0-9]+\.[0-9]+" | sort -V | tail -1)
